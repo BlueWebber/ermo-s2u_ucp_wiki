@@ -74,20 +74,20 @@ Win7 system is located at:
 
 In your S2U Installation folder, run the `UCP_s2u_unpacker.cmd` script **as administrator**.
  
-![UCP STEP 3a: Run s2u_unpacker.cmd as administrator](images/UCP_STEP_3a_s2u_unpacker.cmd_run_as_administrator.png)
+![UCP STEP 3a: Run `s2u_unpacker.cmd` as administrator](images/UCP_STEP_3a_s2u_unpacker.cmd_run_as_administrator.png)
 
 * To run the script as administrator, you will need to right-click it and
   choose "Run as administrator".
 
-![images/UCP_STEP_3ab_s2u_unpacker.cmd.png]
-![images/UCP_STEP_3ac_s2u_unpacker.cmd_finished.png]
+![UCP STEP 3ab: `s2u_unpacker.cmd` run as administrator hint](images/UCP_STEP_3ab_s2u_unpacker.cmd.png)
+![UCP STEP 3ac: `s2u_unpacker.cmd` finished](images/UCP_STEP_3ac_s2u_unpacker.cmd_finished.png)
 
 ## STEP 3b: -- Activate Unpacked Version
 
 Once the `UCP_s2u_unpacker.cmd` script has done its job, you need to activate
 the unpacked game files:
 
-![images/UCP_STEP_3ba_JSGME_activate_s2u_unpacked_version.png]
+![UCP STEP 3ba: Activate `S2U_unpacked_version` in JSGME](images/UCP_STEP_3ba_JSGME_activate_s2u_unpacked_version.png)
 
 * In the JSGME window, select the "S2U_Unpacked_version" row in the
   "Available Mods:" column and press ">" to activate the unpacked version
@@ -99,7 +99,7 @@ the unpacked game files:
   -- this simply means that JSGME is busy doing its thing.
   
   
-![images/UCP_STEP_3bb_JSGME_finished_activating_s2u_unpacked_version.png]
+![UCP STEP 3bb: Finished activating S2U_unpacked_version in JSGME](images/UCP_STEP_3bb_JSGME_finished_activating_s2u_unpacked_version.png)
 
 ----
 
@@ -108,16 +108,16 @@ the unpacked game files:
 Now you'll need to run the `UCP_create_JSGME_install.cmd` script that you copied
 into your Shift 2 Installation folder **as administrator**:
 
-![images/UCP_STEP_4a_create_JSGME_install.cmd_run_as_administrator.png]
+![UCP STEP 4a: Run `create_JSGME_install.cmd` as administrator](images/UCP_STEP_4a_create_JSGME_install.cmd_run_as_administrator.png)
 
 * To run the script as administrator, you will need to right-click it and
   choose "Run as administrator"
 
-![images/UCP_STEP_4ab_create_JSGME_install.cmd.png]
-![images/UCP_STEP_4ac_create_JSGME_install_finished.cmd.png]
+![UCP STEP 4ab: Run as administrator hint for `UCP_create_JSGME_install.cmd`](images/UCP_STEP_4ab_create_JSGME_install.cmd.png)
+![UCP STEP 4ac: `UCP_create_JSGME_install.cmd` finished](images/UCP_STEP_4ac_create_JSGME_install_finished.cmd.png)
 
 * The UCP install script automatically creates a folder called
-  `"\MODS\UCP_v1.1_JSGME_install"` (or a variation hereof)
+  `\MODS\UCP_v1.1_JSGME_install` (or a variation hereof)
   which contains all necessary files that will be used by the JSGME software to
   actually install the UCP changes into the `<S2U Installation>` folder. 
 
@@ -128,15 +128,15 @@ into your Shift 2 Installation folder **as administrator**:
 Once the `UCP_create_JSGME_install.cmd` script has done its job, you need to
 activate the UCP mod:
 
-![images/UCP_STEP_4ba_JSGME_activate_ucp_JSGME_install.png]
+![UCP Step 4ba: Activate `UCP_v1.1_JSGME_install` folder in JSGME](images/UCP_STEP_4ba_JSGME_activate_ucp_JSGME_install.png)
 
-* In the JSGME window, select "UCP_v1.1_JSGME_install" in the left column then
+* In the JSGME window, select `UCP_v1.1_JSGME_install` in the left column then
   activate it by clicking the ">" button at the top between the two columns.
 * After a little while, the activation process will prompt you about file
   conflicts between the already installed S2U_Unpacked_version and the UCP.
-**  This is per design, so press "Yes" to begin the UCP activation process.
+   *  This is per design, so press "Yes" to begin the UCP activation process.
 
-![images/UCP_STEP_4bb_JSGME_finished_activating_ucp_JSGME_install.png]
+![UCP STEP 4bb: Finished activating `UCP_v1.1_JSGME_install` in JSGME](images/UCP_STEP_4bb_JSGME_finished_activating_ucp_JSGME_install.png)
 
 * Once this is complete, click "Close" and you have finished installing the UCP.
 
