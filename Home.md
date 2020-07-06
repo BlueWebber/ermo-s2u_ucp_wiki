@@ -1,1 +1,124 @@
-Welcome to the s2u_ucp wiki!
+= Shift 2 Unleashed - Unofficial Community Patch v1.1 =
+
+This is an unofficial "patch" for Shift 2 Unleashed developed by the nogripracing.com modding community.
+
+The official NoGripRacing discussion thread is here: http://www.nogripracing.com/forum/showthread.php?t=287425
+----
+== Table of Contents ==
+* **[[Home|Introduction** (this page)]]
+* **[[Important_Information|Important Information]]**
+* **[[Installation]]**
+* **[[Updating]]**
+* **[[Uninstall]]**
+* **[[Changelist]]**
+----
+
+== Aim: ==
+
+* To combine bug fixes and enhancements while preserving the driving feel of stock S2U. There are no deliberate physics changes included, but car handling is improved in some cases as a result of bug fixing. There are also some enhancements included that would have been nice to see in an official patch.
+* To maintain a S2U baseline that will make it easier and more convenient to create and distribute mods for S2U w/UCP installed.
+
+== Audience: ==
+
+* People who enjoy driving the game out of the box, but were bothered by the bugs
+* S2U modders, who can use the UCP as a clean base upon which their future mods can be developed.
+
+== Bug fix summary: ==
+
+* Fixed reversed suspension link positions in aarm_multilink.sdf
+* Fixed reversed toe values bug (flipped positive and negative values so that
+  they now correctly match the tuning menu)
+* Fixed sounds for Nissan 2000GTR and Nissan 240ZG engine swap
+* Fixed Mazda RX8 and Porsche 914 engine descriptions
+* Fixed bug in Bugatti Veyron rear-left "SlowBump" range
+* Corrected power of Mazda RX7 FC rotary (stock and turbo upgrades)
+* Fixed uneven ReboundTravel on many cars
+* Fixed diffuser base value typos on various cars
+* Fixed uneven left/right tuning on various cars
+* Fixed front & rear wing range for Audi R8 LMS
+* Fixed camber values on various cars
+* Corrected fuel tank locations (some were up to 2m behind car)
+* Fixed missing DiffPumpSetting values (from "DiffPumpSetting= " to
+  "DiffPumpSetting=0" which was found to produce more consistent AI behaviour
+  in Overhaul mod for Shift 1)
+* Fixed a bug that prevented proper upgrade of Mercedes 190e Evo2
+* Reduced the magnetized effect of collisions with walls/rails and other vehicles
+* Fixed reversed mirrors in several cars
+* Fixed syntax errors in tracks.lod files
+* Fixed tuning level issue introduced by unpacking
+* Fixed Nissan GT-R Engine-Swap 'Phantom Turbo' problem
+* Fixed brake heating issue on Mazda RX-7 FC Speedhunters
+* Fixed Lamborghini Murcielago vents so that they pop up at the correct temperature
+* Fixed wheel offsets and sizes on a range of cars (wheelfixit v2.1)
+
+== Enhancements summary: ==
+
+* Revised installation method with a selection of unpacked game files for ease
+  of modding and explicit compatibility with the Career Mod and the unpacked
+  version of the Polish Tyre Mod for S2U.
+* Support for dropping custom liveries (*.dds files) directly into the
+  \vehicles\textures\ folder
+* Includes optional unpacked UCP-compatible repacks of requested mods:
+**  XBox 360 Controller buttons by Kaerar
+**  DFGT & PS3 Controller buttons by vincentgarcia
+**  Unlock Hidden Car mods by Jeroen vd Helm
+**  Minimod dinput8.dll by Juls
+* Removed intro movies for a faster game startup
+* Enabled ability to skip career movies
+* Increase garage spaces to 800
+* Speedhunters DLC cars can now be sold back to car lot (for $0)
+* Disabled reverse driving penalty to double available tracks in hot lap mode
+* Increase maximum career level to 40 (1 million XP): Unlocks the arrow vinyls
+  at lvl 35 and speedhunter vinyls at lvl 40. (reputation_level.xml)
+* Change how reward cars are handled; all cars except rival cars are now
+  available for purchase in the car lot, the rationale being that rival cars
+  are unique (unlockableitems.xml, reputation_unlockables.xml):
+**  Nissan Silvia
+**  Alfa Romeo Giulietta
+**  Lamborghini Murcielago
+**  Pagani Roadster HP
+**  Lamborghini Reventon HP Cop Edition
+**  Alfa Romeo 8c Spider
+**  Aston Martin DBS Volante
+**  Audi R8 Spyder
+**  Koenigsegg Agera
+**  Pagani Cinque Roadster
+**  Chevy Camaro Dr. Pepper
+**  Porsche Autobild GT3
+* Created standard adjustment units for the following tuning options (set all
+  base values to 0 while keeping original preset values, this way you know what
+  you're actually setting for these items):
+**  Tyre pressure now displays the actual kPa value (previously we saw only
+    a condensed kPa range, which varied between different cars, making tuning
+    confusing)
+**  Steering lock now displays your actual steering lock in degrees
+    (allowing easier comparison between cars)
+**  Differential Power/Coast/Preload
+**  Established a common base camber tuning range (-5 to +5 degrees) and
+    adjustment value (0.1)
+* Increased caster range from 0-7.3 to 0-10 degrees (higher values provide
+  better ffb and more direct handling)
+* Unlocked more default tuning options for lower tier cars
+* Tweaked tyre sounds to be more prominent
+* Tweak upgrade gear ratios for some cars (Moorsman74) and tweak stock gear ratios for others (transfixit v1).
+* Tweak speedometer movement for cars with non-fixed speed 'ticks' (speedofixit v2)
+----
+
+== Credits ==
+
+**Main Authors:** matt2380, JDougNY, ermo (current maintainer), and pez2k
+
+**Contributors and supporters:** Aerex, Bongomaster, brrupsz, bt48, D1Racer, darkcyde, djotefsoup, edubz123, Jeroen vd Helm, Jonzy, Kaerar, Kazumi, Kinski, kligson, Kultag, LawRhed, MacGear, Moorsman74, ogre2010, outlaw22, SakuraBlack, Siggs, SternRav0R, tulib202, xpertvision, Xtra.
+
+Thanks to Juls for the great inject tool (with no size limtations) and the high priority input thread DLL.
+
+Thanks to Luigi Auriemma for the quickbms .bff unpacking tool (http://aluigi.altervista.org/quickbms.htm).
+
+Thanks to JoneSoft for the Generic Mod Enabler (JSGME) freeware that has been
+included to assist installation
+(http://www.users.on.net/~jscones/software/products-jsgme.html) (link currently down).
+----
+
+=== NEXT ===
+
+[[Important_Information|Important Information]]
