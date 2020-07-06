@@ -1,4 +1,4 @@
-= Important information =
+# Important information
 
 
 **To avoid problems, please (!) take the time to read this readme properly from start to finish.** :-)
@@ -9,13 +9,13 @@
   (v1.02), which is included in the PC DLC Pack (Legends and Speedhunters packs),
   which you can find at http://store.origin.com/ and then search for "unleashed",
   then choose the version that suits you:
-** "DVD Boxed Copy" (people have reported that it was necessary to install patch v1.01 before installing the DLC with this version; if they didn't, no DLC cars or tracks would be present)
-** "Non-Origin version"
-** "Origin version"
+   * "DVD Boxed Copy" (people have reported that it was necessary to install patch v1.01 before installing the DLC with this version; if they didn't, no DLC cars or tracks would be present)
+   * "Non-Origin version"
+   * "Origin version"
 * If you install other mods after the UCP then it is strongly recommended you
   continue to use the JSGME freeware.
 
-== After installation ==
+## After installation
 
 * Reset your saved car setups in the GARAGE> TUNING menu (using the "R" key),
   this is due to the significant changes made to the car tuning (ie, fixing
@@ -23,19 +23,20 @@
 * Some users may also need to reset their controller profile after installation,
   otherwise their controller may not respond to steering.
 * See this thread for discussion:
-  http://nogripracing.com/forum/showthread.php?t=287425
+  http://nogripracing.com/forum/showthread.php?t=287425 (permanently offline now that nogripracing.com is no longer in commission)
 
-== Longer Loading Times ==
+## Longer Loading Times
 
 The UCP will unpack a subset of the packed game files in order to make it easier to tinker with the game data files and create compatible mods on top of the UCP.
 
 As a consequence of all cars being unpacked, the loading times when switching cars in the garage will be slightly higher due to the seek overhead associated with loading many small files into system memory for display on the screen. SSD users will of course not be impacted as much by this as users of traditional rotating storage.
 
-== Space Requirements ==
+## Space Requirements
 
 Due to the way the UCP install process is designed, backups will take up a large amount of space. Several people have reported that a fully patched game with this version of the UCP takes up around 21GB of space, including active game files and backups.
+
 ----
 
-=== NEXT ===
+## NEXT
 
-[[Installation]]
+[Installation](Installation)
