@@ -1,5 +1,6 @@
-= Installation =
-\\
+# Installation
+
+
 * STEP 0: -- Prerequisites
 * STEP 1: -- Extract s2u_ucp zipped folder to your S2U installation folder
 * STEP 2: -- Backup Save Game
@@ -8,10 +9,10 @@
 * STEP 4a: -- Run UCP Install Script
 * STEP 4b: -- Activate UCP
 * STEP 5: -- Ingame Actions
-\\
-\\
+
 ----
-== STEP 0: -- Prerequisites ==
+
+## STEP 0: -- Prerequisites
 
 This mod requires that you have already installed the latest official patch
 (v1.02) which is included in the free PC DLC Pack (Legends and Speedhunters
@@ -25,69 +26,68 @@ the version that suits you:
 Then click "add to basket", then "checkout" (which will require that you create
 an origin.com account or to sign-in if you already have an account). 
 
-=== JSGME UCP v1.06 (and later) users ===
+### JSGME UCP v1.06 (and later) users
 
 Each time you install a new JSGME UCP version, it is important that you first:
 * **DEACTIVATE** and **DELETE** any previous UCP version installed via JSGME.
 * **DELETE** any existing UCP_modified_assets (or UCP_temp_files) folder in your S2U installation folder.
 
-=== non-JSGME UCP v1.06 users ===
+### non-JSGME UCP v1.06 users
 
 Due to the need to work from a clean base, you are required to do a complete
 reinstall of S2U and patch it to v1.02 w/DLC. This will ensure that you start
 from a known base when you install the unpacked UCP v1.1 version.
-\\
-\\
-----
-== STEP 1: -- Extract s2u_ucp zipped folder to your S2U installation folder ==
 
-**NOTE**: If you are upgrading from a previous UCP v1.1-prerelease, do remember to remove the existing <S2U Installation>\UCP_modified_assets folder. If you are upgrading from v1.06 or earlier, see the two paragraphs above in STEP 0 -- Prerequisites.
+----
+
+## STEP 1: -- Extract s2u_ucp zipped folder to your S2U installation folder
+
+**NOTE**: If you are upgrading from a previous UCP v1.1-prerelease, do remember to remove the existing `<S2U Installation>\UCP_modified_assets` folder. If you are upgrading from v1.06 or earlier, see the two paragraphs above in STEP 0: -- Prerequisites.
 
 The downloaded s2u_ucp zipped folder contains the following files:
 
-{{images/UCP_STEP_1a_file_list.png}}
+![UCP STEP 1a: File list](images/UCP_STEP_1a_file_list.png)
 
-Extract the contents of the downloaded s2u_ucp zipped folder into the root of your S2U installation folder (which is typically located in {{{"C:\Program Files (x86)\Electronic Arts\SHIFT 2 UNLEASHED\"}}}).
+Extract the contents of the downloaded s2u_ucp zipped folder into the root of your S2U installation folder (which is typically located in `"C:\Program Files (x86)\Electronic Arts\SHIFT 2 UNLEASHED\"`).
 
 After extracting the files to your S2U installation folder, your S2U installation folder should look roughly like this:
 
-{{images/UCP_STEP_1b_copy_to_s2u_installation_folder.png}}
+![UCP STEP 1b: Copy files to s2u installation folder](images/UCP_STEP_1b_copy_to_s2u_installation_folder.png)
 		
-After extraction, run //JSGME.exe// from your S2U installation folder.
+After extraction, run `JSGME.exe` from your S2U installation folder.
 It will open a new window with the title "Generic Mod Enabler".
 
-{{images/UCP_STEP_1c_JSGME_1st_run.png}}
+![UCP Step 1c: JSGME first run](images/UCP_STEP_1c_JSGME_1st_run.png)
 
-\\
-\\
 ----
-== STEP 2: -- Backup Save Game ==
+
+## STEP 2: -- Backup Save Game
 
 I strongly recommend that you make a backup of your save game file, which on my
 Win7 system is located at:
 
-* C:\Users\ermo\Documents\SHIFT 2 UNLEASHED\profiles\default.sav
-\\
-\\
-----
-== STEP 3a: -- Run Unpack Script ==
+`"C:\Users\ermo\Documents\SHIFT 2 UNLEASHED\profiles\default.sav"`
 
-In your S2U Installation folder, run the //UCP_s2u_unpacker.cmd// script **as administrator**.
+----
+
+## STEP 3a: -- Run Unpack Script
+
+In your S2U Installation folder, run the `UCP_s2u_unpacker.cmd` script **as administrator**.
  
-{{images/UCP_STEP_3a_s2u_unpacker.cmd_run_as_administrator.png}}
+![UCP STEP 3a: Run s2u_unpacker.cmd as administrator](images/UCP_STEP_3a_s2u_unpacker.cmd_run_as_administrator.png)
 
 * To run the script as administrator, you will need to right-click it and
   choose "Run as administrator".
 
-{{images/UCP_STEP_3ab_s2u_unpacker.cmd.png}}
-{{images/UCP_STEP_3ac_s2u_unpacker.cmd_finished.png}}
+![images/UCP_STEP_3ab_s2u_unpacker.cmd.png]
+![images/UCP_STEP_3ac_s2u_unpacker.cmd_finished.png]
 
-== STEP 3b: -- Activate Unpacked Version ==
+## STEP 3b: -- Activate Unpacked Version
 
-Once the //UCP_s2u_unpacker.cmd// script has done its job, you need to activate
+Once the `UCP_s2u_unpacker.cmd` script has done its job, you need to activate
 the unpacked game files:
 
-{{images/UCP_STEP_3ba_JSGME_activate_s2u_unpacked_version.png}}
+![images/UCP_STEP_3ba_JSGME_activate_s2u_unpacked_version.png]
 
 * In the JSGME window, select the "S2U_Unpacked_version" row in the
   "Available Mods:" column and press ">" to activate the unpacked version
@@ -99,36 +99,36 @@ the unpacked game files:
   -- this simply means that JSGME is busy doing its thing.
   
   
-{{images/UCP_STEP_3bb_JSGME_finished_activating_s2u_unpacked_version.png}}
-\\
-\\
-----
-== STEP 4a: -- Run UCP Install Script ==
+![images/UCP_STEP_3bb_JSGME_finished_activating_s2u_unpacked_version.png]
 
-Now you'll need to run the //UCP_create_JSGME_install.cmd// script that you copied
+----
+
+## STEP 4a: -- Run UCP Install Script
+
+Now you'll need to run the `UCP_create_JSGME_install.cmd` script that you copied
 into your Shift 2 Installation folder **as administrator**:
 
-{{images/UCP_STEP_4a_create_JSGME_install.cmd_run_as_administrator.png}}
+![images/UCP_STEP_4a_create_JSGME_install.cmd_run_as_administrator.png]
 
 * To run the script as administrator, you will need to right-click it and
   choose "Run as administrator"
 
-{{images/UCP_STEP_4ab_create_JSGME_install.cmd.png}}
-{{images/UCP_STEP_4ac_create_JSGME_install_finished.cmd.png}}
+![images/UCP_STEP_4ab_create_JSGME_install.cmd.png]
+![images/UCP_STEP_4ac_create_JSGME_install_finished.cmd.png]
 
 * The UCP install script automatically creates a folder called
-  "\MODS\UCP_v1.1_JSGME_install" (or a variation hereof)
+  `"\MODS\UCP_v1.1_JSGME_install"` (or a variation hereof)
   which contains all necessary files that will be used by the JSGME software to
-  actually install the UCP changes into the <S2U Installation> folder. 
+  actually install the UCP changes into the `<S2U Installation>` folder. 
 
-== STEP 4b: -- Activate UCP ==
+## STEP 4b: -- Activate UCP
 
 **NOTE:** The UCP was designed to be activated on top of the S2U_unpacked_version that was activated in Step 3b. The UCP will not function correctly unless it is activated on top of a previously activated S2U_unpacked_version!
 
-Once the //UCP_create_JSGME_install.cmd// script has done its job, you need to
+Once the `UCP_create_JSGME_install.cmd` script has done its job, you need to
 activate the UCP mod:
 
-{{images/UCP_STEP_4ba_JSGME_activate_ucp_JSGME_install.png}}
+![images/UCP_STEP_4ba_JSGME_activate_ucp_JSGME_install.png]
 
 * In the JSGME window, select "UCP_v1.1_JSGME_install" in the left column then
   activate it by clicking the ">" button at the top between the two columns.
@@ -136,28 +136,27 @@ activate the UCP mod:
   conflicts between the already installed S2U_Unpacked_version and the UCP.
 **  This is per design, so press "Yes" to begin the UCP activation process.
 
-{{images/UCP_STEP_4bb_JSGME_finished_activating_ucp_JSGME_install.png}}
+![images/UCP_STEP_4bb_JSGME_finished_activating_ucp_JSGME_install.png]
 
 * Once this is complete, click "Close" and you have finished installing the UCP.
-\\
-\\
+
 ----
-== STEP 5: -- Ingame Actions ==
+
+## STEP 5: -- Ingame Actions
 
 After installing the UCP for the first time (but not on subsequent updates),
 you should:
 
-* Reset your saved car setups in the GARAGE> TUNING menu (using the "R" key),
-**  This is due to the significant changes made to the car tuning (ie, fixing
-    the reverse toe value bug). 
+* Reset your saved car setups in the _GARAGE> TUNING_ menu (using the `R` key),
+   *  This is due to the significant changes made to the car tuning (i.e, fixing
+      the reverse toe value bug). 
 * Some users may also need to reset their controller profile after installation,
   otherwise their controller may not respond to steering.
 * Consider starting a fresh profile. We have seen reports of game crashes on
   race load when using a profile created before the UCP was applied.
-\\
-\\
+
 ----
 
-=== NEXT ===
+## NEXT
 
-[[Updating]]
+[Updating](Updating)
