@@ -1,6 +1,6 @@
-= Changelist =
+# Changelist
 
-== v1.1 pre-release (v1.0.99f) ==
+## v1.1 pre-release (v1.0.99f)
 
 * New maintainer (ermo)
 * Revised installation method with a selection of unpacked game files for ease
@@ -8,157 +8,177 @@
   version of the Polish Tyre Mod for S2U
 * Only includes the JSGME installation method (simpler to support,
   automatically creates backups)
-* Support for dropping custom liveries (*.dds files) directly into the
-  \vehicles\textures\ folder
+* Support for dropping custom liveries (`*.dds` files) directly into the
+  `\vehicles\textures\` folder
 * Online README for easier viewing/publishing of inline images
 * Includes optional unpacked UCP-compatible repacks of requested mods:
-**  XBox 360 Controller buttons by Kaerar
-**  DFGT & PS3 Controller buttons by vincentgarcia
-**  Unlock Hidden Car mods by Jeroen vd Helm
-**  Minimod dinput8.dll by Juls
+   *  XBox 360 Controller buttons by Kaerar
+   *  DFGT & PS3 Controller buttons by vincentgarcia
+   *  Unlock Hidden Car mods by Jeroen vd Helm
+   *  Minimod dinput8.dll by Juls
 * Fix uneven L/R brake settings on Infinity G35, Nissan R34 GTR, Lexus LFA, Pagani Cinque Roadster, ,  Porsche 911 GT3RS, Radical SR3
 * Fix uneven L/R  Spininertia values for AE86s, Alfa Romeo GTA 1600, Audi S4 & RS4, Ford Escort Mk1, Lotus Cortina
 * Fix uneven L/R suspension adjustment ranges on Alpina B6 GT3, Aston Martin DB9, Ford Mustang Boss, Gumpert Apollo, Mazda RX8 MadMike, Pagani Zonda R, 
-* Fix misaligned suspension link positions in aarm_multilink.sdf and its lightened derivatives (used by Radical SR3 and Caterham R500)
+* Fix misaligned suspension link positions in `aarm_multilink.sdf` and its lightened derivatives (used by Radical SR3 and Caterham R500)
 * Tweaked tyre sounds to be more prominent
 * (IN TESTING) Increase maximum career level to 40 (1 million XP):
   Unlocks the arrow vinyls at lvl 35 and speedhunter vinyls at lvl 40.
-  (reputation_level.xml)
+  (`reputation_level.xml`)
 * (IN TESTING) Change how reward cars are handled; all cars except rival cars
   are now available for purchase in the car lot, the rationale being that rival
-  cars are unique (unlockableitems.xml, reputation_unlockables.xml):
-**  Nissan Silvia
-**  Alfa Romeo Giulietta
-**  Lamborghini Murcielago
-**  Pagani Roadster HP
-**  Lamborghini Reventon HP Cop Edition
-**  Alfa Romeo 8c Spider
-**  Aston Martin DBS Volante
-**  Audi R8 Spyder
-**  Koenigsegg Agera
-**  Pagani Cinque Roadster
-**  Chevy Camaro Dr. Pepper
-**  Porsche Autobild GT3
-* Decrease car-to-car collision stickiness (Set FeelerFlags=0 in all chassis files)
+  cars are unique (`unlockableitems.xml`, `reputation_unlockables.xml`):
+   *  Nissan Silvia
+   *  Alfa Romeo Giulietta
+   *  Lamborghini Murcielago
+   *  Pagani Roadster HP
+   *  Lamborghini Reventon HP Cop Edition
+   *  Alfa Romeo 8c Spider
+   *  Aston Martin DBS Volante
+   *  Audi R8 Spyder
+   *  Koenigsegg Agera
+   *  Pagani Cinque Roadster
+   *  Chevy Camaro Dr. Pepper
+   *  Porsche Autobild GT3
+* Decrease car-to-car collision stickiness (Set `FeelerFlags=0` in all chassis files)
 * Include a collection of fixes from Moorsman74:
-** Taller upgrade drivetrain fixes:
-*** Taller upgrade gearing for Skyline 2000 GT-R
-*** Taller upgrade gearing for Lancia Delta Integrale
-*** Taller upgrade gearing for RS4, S4, S3, TT, Evo IX, Evo X, R32, R34, STi
-*** Taller upgrade gearing for Koenigsegg CCX, Mclaren F1 & MP4-12c, Porsche 918 & Carrera GT
-** Fix for the Nissan GT-R Engine Swap 'Phantom Turbo' problem.
-** Fix the brake heating properties of the Mazda RX-7 FC Speedhunters car
+   * Taller upgrade drivetrain fixes:
+      * Taller upgrade gearing for Skyline 2000 GT-R
+      * Taller upgrade gearing for Lancia Delta Integrale
+      * Taller upgrade gearing for RS4, S4, S3, TT, Evo IX, Evo X, R32, R34, STi
+      * Taller upgrade gearing for Koenigsegg CCX, Mclaren F1 & MP4-12c, Porsche 918 & Carrera GT
+   * Fix for the Nissan GT-R Engine Swap 'Phantom Turbo' problem.
+   * Fix the brake heating properties of the Mazda RX-7 FC Speedhunters car
 * Include a collection of fixes from bt48:
-** speedofixit v2: 
-*** Improved (but not totally fixed) S3, S4, Evo X, Leon Cupra, GTi Mk5 and Scirocco speedos in cockpit view. They will stop rotating at a certain speed to maintain some accuracy.  If you would like some more rotation even though it lacks accuracy, open the .CPT file with notepad, look for speed gauge and double both maxvalue and degrees.
-*** Totally fixed Bentley Conti SS.
-** transfixit v1:
-*** Revamped ratios for DB9, DBS, Conti SS, M6, Veyron, Camaro, Z06, Viper SRT-10, XKR, IS-F. (Generally given tall top gears and/or longer ratios so they may feel slower in most situations. R&T data panels used as reference.)
-*** Changed to semiautomatic=1 for: DB9, DBS, Conti SS, XKR, IS-F, SL65, both SLRs. (Don't know if it does anything but these cars have torque converter transmissions in reality. May switch automated single and dual clutch cars to this in the future too.) Checked/changed semiautomatic=0 for other cars in the file for consistency with untouched.
-*** Sped up shifts of the Evo X and Agera as they were previously given manual speed. Slowed down LP640 shift speed to manual speeds as that is the spec and to distance it from e-gear Reventon. TT and Huayra shift speed slowed to 0.1 for consistency with other auto clutchers. (Want to check if the number really represents time taken in seconds.) IS-F and couple others have slightly slower shift speed to match XKR and represent torque converter auto shift speeds. 
-*** Shift speeds are generally fairly simple by default:
-**** manuals have 0.3
-**** torque converter autos should have around 0.2
-**** automated single and double clutches have 0.1
-** wheelfixit v2.1:
-*** Problem statement:  Due to the carry-over nature of NFS assets and possibly the previous availability of 'autosculpt' in Pro Street and Undercover, many stock wheels on cars are mis-sized relative to actual specification and the aftermarket designs available in-game.
-*** Compared to the aftermarket designs, many cars had odd sizes, such as 16.5 inches for the Civic Si and 19.5 inches for both front and rears of the Agera. (Should be 17s for the Honda and 19 and 20 for the Agera's front and rears respectively.)
-*** Thus, I've had most of these culprits fixed over 18 hours of research, work and testing. 53 cars are affected.
-* Added semiautomatic=1 to cars that have cockpit paddles and/or short shift times (R8, R8 LMS, R8 Spyder, TT, Z4, SLS, EvoX, Pagani C9, C9 Rival)
+   * speedofixit v2: 
+      * Improved (but not totally fixed) S3, S4, Evo X, Leon Cupra, GTi Mk5 and Scirocco speedos in cockpit view.
+        They will stop rotating at a certain speed to maintain some accuracy.  If you would like some more rotation
+        even though it lacks accuracy, open the .CPT file with notepad, look for speed gauge and double both maxvalue
+        and degrees.
+      * Totally fixed Bentley Conti SS.
+   * transfixit v1:
+      * Revamped ratios for DB9, DBS, Conti SS, M6, Veyron, Camaro, Z06, Viper SRT-10, XKR, IS-F.
+        (Generally given tall top gears and/or longer ratios so they may feel slower in most situations.
+        R&T data panels used as reference.)
+      * Changed to semiautomatic=1 for: DB9, DBS, Conti SS, XKR, IS-F, SL65, both SLRs.
+        (Don't know if it does anything but these cars have torque converter transmissions in reality.
+        May switch automated single and dual clutch cars to this in the future too.)
+        Checked/changed semiautomatic=0 for other cars in the file for consistency with untouched.
+      * Sped up shifts of the Evo X and Agera as they were previously given manual speed.
+        Slowed down LP640 shift speed to manual speeds as that is the spec and to distance it from e-gear Reventon.
+        TT and Huayra shift speed slowed to 0.1 for consistency with other auto clutchers.
+        (Want to check if the number really represents time taken in seconds.)
+        IS-F and couple others have slightly slower shift speed to match XKR and represent torque converter auto shift speeds. 
+      * Shift speeds are generally fairly simple by default:
+         * manuals have 0.3
+         * torque converter autos should have around 0.2
+         * automated single and double clutches have 0.1
+   * wheelfixit v2.1:
+      * Problem statement:  Due to the carry-over nature of NFS assets and possibly the previous availability
+        of 'autosculpt' in Pro Street and Undercover, many stock wheels on cars are mis-sized relative to actual
+        specification and the aftermarket designs available in-game.
+      * Compared to the aftermarket designs, many cars had odd sizes, such as 16.5 inches for the Civic Si and
+        19.5 inches for both front and rears of the Agera. (Should be 17s for the Honda and 19 and 20 for the Agera's
+        front and rears respectively.)
+      * Thus, I've had most of these culprits fixed over 18 hours of research, work and testing. 53 cars are affected.
+* Added `semiautomatic=1` to cars that have cockpit paddles and/or short shift times (R8, R8 LMS, R8 Spyder, TT, Z4, SLS, EvoX, Pagani C9, C9 Rival)
 * (NOT DONE) Decrease AI aggressiveness (we want the AI to ram less)
 * (NOT DONE) Increase damage levels/sensitivity
+
 ----
 
-== v1.06 ==
+## v1.06
 
 * New backup and install method
 * Corrected engine swap HP menu stats
 * Sellable Speedhunters DLC cars
 * Increase maximum career level to 30 with following reward vehicles:
-**  Level 21 = Limited Edition cars, Alfa Romeo Giulietta, Nissan S15, and
-    Lamborghini Murcielago LP640
-**  Level 22 = Chevrolet Camaro, Dr Pepper Edition
-**  Level 23 = Porsche GT3, AutoBild Edtion
-**  Level 24 = Alfa Romeo 8C Spider
-**  Level 25 = Aston Martin DBS Volante
-**  Level 26 = Audi R8 Spyder
-**  Level 27 = Pagani Cinque Roadster
-**  Level 28 = Pagani Cinque Roadster, Hot Pursuit Edition
-**  Level 29 = Lamborghini Reventon, Hot Pursuit Cop Edition
-**  Level 30 = Koenigsegg Agera
+   *  Level 21 = Limited Edition cars, Alfa Romeo Giulietta, Nissan S15, and
+      Lamborghini Murcielago LP640
+   *  Level 22 = Chevrolet Camaro, Dr Pepper Edition
+   *  Level 23 = Porsche GT3, AutoBild Edtion
+   *  Level 24 = Alfa Romeo 8C Spider
+   *  Level 25 = Aston Martin DBS Volante
+   *  Level 26 = Audi R8 Spyder
+   *  Level 27 = Pagani Cinque Roadster
+   *  Level 28 = Pagani Cinque Roadster, Hot Pursuit Edition
+   *  Level 29 = Lamborghini Reventon, Hot Pursuit Cop Edition
+   *  Level 30 = Koenigsegg Agera
 * Increase prize money earned in quick races from $200 to $20,000
 * Enable prize money and XP for solo quick race
 * Increase caster range from 0-7.3 to 0-10 degrees
 * Increase garage spaces to 800
 * Fixed sound for Nissan 2000GTR and Nissan 240ZG engine swap
 * Fixed Mazda RX8 and Porsche 914 engine descriptions
-* Fixed bug in Bugatti Veyron rear-left SlowBumpRange
+* Fixed bug in Bugatti Veyron rear-left `SlowBumpRange`
+
 ----
 
-== v1.05 ==
+## v1.05
 
 * Removed the "unlock hidden cars and events" component in v1.03 and v1.04
   because it was causing some problems with save games/new careers/menu
   selection for some people, sorry!
-**  Anyone who installed v1.03 or v1.04 and had problems with their savegame
-    should restore their original unmodded backup (v1.02) of these two files
-    before installing v1.05:
-***   \Pakfiles\BOOTFLOW.bff
-***   \Pakfiles\BOOTPSA.bff
+   * Anyone who installed v1.03 or v1.04 and had problems with their savegame
+     should restore their original unmodded backup (v1.02) of these two files
+     before installing v1.05:
+   * `\Pakfiles\BOOTFLOW.bff`
+   * `\Pakfiles\BOOTPSA.bff`
 * Fixed typos in three files that were included with the original game (two
   menu files and one damage file).
 * Enabled ability to skip career movies.
 * Corrected power of Mazda RX7 FC rotary (stock and turbo upgrades).
-* Corrected install location of some of the track.lod files
+* Corrected install location of some of the `track.lod` files
 * Adjusted max caster from 70 to 73 (to match range of default game = 72.5)
+
 ----
 
-== v1.04 ==
+## v1.04
 
 * Attempted to fix problem with unlocking hidden cars which caused an issue
   with main menu and prevented starting a new career (however this was still
   bugged, removed in v1.05).
 * Added some missing chassis updates that were supposed to be in v1.03.
+
 ----
 
-== v1.03 ==
+## v1.03
 
 * Removed intro movies for a faster game startup.
 * Numerous changes within each vehicles chassis file:
-**  Fixed reversed toe values bug (flip positive and negative values to match
-    tuning menu).
-**  Created standard adjustment units for the following tuning options (set all
-    base values to 0 while keeping original preset values, this way you know
-    what you're actually setting for these items).
-***   Tyre pressure now displays the actual kPa value (previously we saw only a
-      condensed kPa range, which varied between different cars, making tuning
-      confusing).
-***   Steering lock now displays your actual steering lock (allowing easier
-      comparison between cars).
-***   Differential Power/Coast/Preload
-***   Caster ranges now range from 0 to 70, corresponding to 0 to 7 degrees.
-***   Established a common base camber tuning range (-5 to +5 degrees) and
-      adjustment value (0.1)
-**  Unlocked more default tuning options for lower tier cars.
-**  Fixed uneven ReboundTravel on many cars.
-**  Fixed diffuser base value typos on various cars.
-**  Fixed uneven left/right tuning on various cars.
-**  Fixed front & rear wing range for Audi R8 LMS.
-**  Fixed camber values on various cars.
-**  Corrected fuel tank locations (some were up to 2m behind car).
-**  Fixed missing DiffPumpSetting values (from "DiffPumpSetting= " to
-    "DiffPumpSetting=0" which was found to produce more consistent AI behaviour
-    in Overhaul mod for Shift 1)
+   * Fixed reversed toe values bug (flip positive and negative values to match
+     tuning menu).
+   * Created standard adjustment units for the following tuning options (set all
+     base values to 0 while keeping original preset values, this way you know
+     what you're actually setting for these items).
+   * Tyre pressure now displays the actual kPa value (previously we saw only a
+     condensed kPa range, which varied between different cars, making tuning
+     confusing).
+   * Steering lock now displays your actual steering lock (allowing easier
+     comparison between cars).
+   * Differential Power/Coast/Preload
+   * Caster ranges now range from 0 to 70, corresponding to 0 to 7 degrees.
+   * Established a common base camber tuning range (-5 to +5 degrees) and
+     adjustment value (0.1)
+   * Unlocked more default tuning options for lower tier cars.
+   * Fixed uneven `ReboundTravel` on many cars.
+   * Fixed diffuser base value typos on various cars.
+   * Fixed uneven left/right tuning on various cars.
+   * Fixed front & rear wing range for Audi R8 LMS.
+   * Fixed camber values on various cars.
+   * Corrected fuel tank locations (some were up to 2m behind car).
+   * Fixed missing `DiffPumpSetting` values (from `DiffPumpSetting= ` to
+     `DiffPumpSetting=0` which was found to produce more consistent AI behaviour
+     in Overhaul mod for Shift 1)
 * Fixed a bug that prevented proper upgrade of Mercedes 190e Evo2
-* Unlocked hidden cars and events (turns out this was bugged, sorry!
-  Removed in v1.05).
+* Unlocked hidden cars and events (turns out this was bugged, sorry! Removed in v1.05).
 * Disabled reverse driving penalty to double available tracks in hot lap mode.
 * Reduced the magnetized effect of collisions with walls/rails and other
   vehicles.
 * Fixed reversed mirrors in several cars.
-* Fixed syntax errors in tracks.lod files
+* Fixed syntax errors in `tracks.lod` files
+
 ----
 
-=== BACK TO HOME ===
+### BACK TO HOME
 
-[[Home]]
+[Home](Home)
