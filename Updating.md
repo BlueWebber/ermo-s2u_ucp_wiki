@@ -8,7 +8,7 @@ by following steps 1, 4a and 4b in the [**Installation**](Installation) section.
 
 Unless otherwise specified in the Upgrade notes below, you will **NOT** need to deactivate, delete, reinstall and reactivate the S2U_unpacked_version.
 
-== Upgrade Notes ==
+## Upgrade Notes
 
 Users currently on `<= v1.1-pre1.0.99` who want to upgrade to `>= v1.0.99a` (recommended) are required to do a complete re-install of the UCP due to a new installation check and the addition of an additional unpacked file that allows for tweaking of the tyre screech audio.
 
