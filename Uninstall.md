@@ -1,7 +1,7 @@
-== Uninstall ==
+## Uninstall
 
-If you want to uninstall the UCP, simply run //JSGME.exe//, select
-"UCP_v1.1_JSGME_install" in the right column then deactivate it by clicking
+If you want to uninstall the UCP, simply run `JSGME.exe`, select
+`UCP_v1.1_JSGME_install` in the right column then deactivate it by clicking
 the "<" button.
 
 Once this is complete, click "Close" and the UCP will remain deactivated.
@@ -14,6 +14,6 @@ the base on which all other mods build.
 
 ----
 
-=== NEXT ===
+### NEXT
 
-[[Changelist]]
+[Changelist](Changelist)
