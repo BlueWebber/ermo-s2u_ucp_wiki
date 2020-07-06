@@ -1,29 +1,30 @@
-= Shift 2 Unleashed - Unofficial Community Patch v1.1 =
+# Shift 2 Unleashed - Unofficial Community Patch v1.1
 
 This is an unofficial "patch" for Shift 2 Unleashed developed by the nogripracing.com modding community.
 
-The official NoGripRacing discussion thread is here: http://www.nogripracing.com/forum/showthread.php?t=287425
+The official NoGripRacing discussion thread used to live here: http://www.nogripracing.com/forum/showthread.php?t=287425 , but since nogripracing.com is now defunct, the posts have been lost to the bit gods :/.
+
 ----
-== Table of Contents ==
-* **[[Home|Introduction** (this page)]]
-* **[[Important_Information|Important Information]]**
-* **[[Installation]]**
-* **[[Updating]]**
-* **[[Uninstall]]**
-* **[[Changelist]]**
+## Table of Contents
+* [**Introduction**](Home) (this page)
+* [**Important Information**](Important_Information)
+* [**Installation**](Installation)
+* [**Updating**](Updating)
+* [**Uninstall**](Uninstall)
+* [**Changelist**](Changelist)
 ----
 
-== Aim: ==
+## Aim:
 
 * To combine bug fixes and enhancements while preserving the driving feel of stock S2U. There are no deliberate physics changes included, but car handling is improved in some cases as a result of bug fixing. There are also some enhancements included that would have been nice to see in an official patch.
 * To maintain a S2U baseline that will make it easier and more convenient to create and distribute mods for S2U w/UCP installed.
 
-== Audience: ==
+## Audience:
 
 * People who enjoy driving the game out of the box, but were bothered by the bugs
 * S2U modders, who can use the UCP as a clean base upon which their future mods can be developed.
 
-== Bug fix summary: ==
+## Bug fix summary:
 
 * Fixed reversed suspension link positions in aarm_multilink.sdf
 * Fixed reversed toe values bug (flipped positive and negative values so that
@@ -51,7 +52,7 @@ The official NoGripRacing discussion thread is here: http://www.nogripracing.com
 * Fixed Lamborghini Murcielago vents so that they pop up at the correct temperature
 * Fixed wheel offsets and sizes on a range of cars (wheelfixit v2.1)
 
-== Enhancements summary: ==
+## Enhancements summary:
 
 * Revised installation method with a selection of unpacked game files for ease
   of modding and explicit compatibility with the Career Mod and the unpacked
@@ -59,10 +60,10 @@ The official NoGripRacing discussion thread is here: http://www.nogripracing.com
 * Support for dropping custom liveries (*.dds files) directly into the
   \vehicles\textures\ folder
 * Includes optional unpacked UCP-compatible repacks of requested mods:
-**  XBox 360 Controller buttons by Kaerar
-**  DFGT & PS3 Controller buttons by vincentgarcia
-**  Unlock Hidden Car mods by Jeroen vd Helm
-**  Minimod dinput8.dll by Juls
+   * XBox 360 Controller buttons by Kaerar
+   * DFGT & PS3 Controller buttons by vincentgarcia
+   * Unlock Hidden Car mods by Jeroen vd Helm
+   * Minimod dinput8.dll by Juls
 * Removed intro movies for a faster game startup
 * Enabled ability to skip career movies
 * Increase garage spaces to 800
@@ -73,29 +74,29 @@ The official NoGripRacing discussion thread is here: http://www.nogripracing.com
 * Change how reward cars are handled; all cars except rival cars are now
   available for purchase in the car lot, the rationale being that rival cars
   are unique (unlockableitems.xml, reputation_unlockables.xml):
-**  Nissan Silvia
-**  Alfa Romeo Giulietta
-**  Lamborghini Murcielago
-**  Pagani Roadster HP
-**  Lamborghini Reventon HP Cop Edition
-**  Alfa Romeo 8c Spider
-**  Aston Martin DBS Volante
-**  Audi R8 Spyder
-**  Koenigsegg Agera
-**  Pagani Cinque Roadster
-**  Chevy Camaro Dr. Pepper
-**  Porsche Autobild GT3
+   *  Nissan Silvia
+   *  Alfa Romeo Giulietta
+   *  Lamborghini Murcielago
+   *  Pagani Roadster HP
+   *  Lamborghini Reventon HP Cop Edition
+   *  Alfa Romeo 8c Spider
+   *  Aston Martin DBS Volante
+   *  Audi R8 Spyder
+   *  Koenigsegg Agera
+   *  Pagani Cinque Roadster
+   *  Chevy Camaro Dr. Pepper
+   *  Porsche Autobild GT3
 * Created standard adjustment units for the following tuning options (set all
   base values to 0 while keeping original preset values, this way you know what
   you're actually setting for these items):
-**  Tyre pressure now displays the actual kPa value (previously we saw only
-    a condensed kPa range, which varied between different cars, making tuning
-    confusing)
-**  Steering lock now displays your actual steering lock in degrees
-    (allowing easier comparison between cars)
-**  Differential Power/Coast/Preload
-**  Established a common base camber tuning range (-5 to +5 degrees) and
-    adjustment value (0.1)
+   *  Tyre pressure now displays the actual kPa value (previously we saw only
+       a condensed kPa range, which varied between different cars, making tuning
+       confusing)
+   *  Steering lock now displays your actual steering lock in degrees
+      (allowing easier comparison between cars)
+   *  Differential Power/Coast/Preload
+   *  Established a common base camber tuning range (-5 to +5 degrees) and
+      adjustment value (0.1)
 * Increased caster range from 0-7.3 to 0-10 degrees (higher values provide
   better ffb and more direct handling)
 * Unlocked more default tuning options for lower tier cars
@@ -104,9 +105,9 @@ The official NoGripRacing discussion thread is here: http://www.nogripracing.com
 * Tweak speedometer movement for cars with non-fixed speed 'ticks' (speedofixit v2)
 ----
 
-== Credits ==
+## Credits
 
-**Main Authors:** matt2380, JDougNY, ermo (current maintainer), and pez2k
+**Main Authors:** matt2380, JDougNY, ermo (current maintainer, inactive), and pez2k
 
 **Contributors and supporters:** Aerex, Bongomaster, brrupsz, bt48, D1Racer, darkcyde, djotefsoup, edubz123, Jeroen vd Helm, Jonzy, Kaerar, Kazumi, Kinski, kligson, Kultag, LawRhed, MacGear, Moorsman74, ogre2010, outlaw22, SakuraBlack, Siggs, SternRav0R, tulib202, xpertvision, Xtra.
 
@@ -116,9 +117,10 @@ Thanks to Luigi Auriemma for the quickbms .bff unpacking tool (http://aluigi.alt
 
 Thanks to JoneSoft for the Generic Mod Enabler (JSGME) freeware that has been
 included to assist installation
-(http://www.users.on.net/~jscones/software/products-jsgme.html) (link currently down).
+[http://www.users.on.net/~jscones/software/products-jsgme.html] (link currently down).
+
 ----
 
-=== NEXT ===
+### NEXT
 
-[[Important_Information|Important Information]]
+[Important Information](Important_Information) 
