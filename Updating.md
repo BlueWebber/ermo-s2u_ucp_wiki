@@ -1,21 +1,21 @@
-== Updating the UCP ==
+## Updating the UCP
 
 Every so often, a new UCP version might be released. To upgrade to a newer
 version, you will need to deactivate the existing UCP version with JSGME and, crucially,
-**DELETE** any existing \UCP_modified_assets\ (or \UCP_temp_files\ for v1.06)
+**DELETE** any existing `\UCP_modified_assets\` (or `\UCP_temp_files\` for v1.06)
 folder in your S2U installation folder before you install the new UCP version
-by following steps 1, 4a and 4b in the **[[Installation]]** section.
+by following steps 1, 4a and 4b in the [**Installation**](Installation) section.
 
 Unless otherwise specified in the Upgrade notes below, you will **NOT** need to deactivate, delete, reinstall and reactivate the S2U_unpacked_version.
 
 == Upgrade Notes ==
 
-Users currently on //<= v1.1-pre1.0.99// who want to upgrade to //>= v1.0.99**a**// (recommended) are required to do a complete re-install of the UCP due to a new installation check and the addition of an additional unpacked file that allows for tweaking of the tyre screech audio.
+Users currently on `<= v1.1-pre1.0.99` who want to upgrade to `>= v1.0.99a` (recommended) are required to do a complete re-install of the UCP due to a new installation check and the addition of an additional unpacked file that allows for tweaking of the tyre screech audio.
 
-Users already on >= v1.0.99a only need to install the new UCP version as per the instructions at the top of this page.
+Users already on `>= v1.0.99a` only need to install the new UCP version as per the instructions at the top of this page.
 
 ----
 
-=== NEXT ===
+### NEXT
 
-[[Uninstall]]
+[Uninstall](Uninstall)
