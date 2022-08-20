@@ -2,7 +2,9 @@
 
 This is an unofficial "patch" for Shift 2 Unleashed developed by the nogripracing.com modding community.
 
-The official NoGripRacing discussion thread used to live here: http://www.nogripracing.com/forum/showthread.php?t=287425 , but since nogripracing.com is now defunct, the OP and the FAQ can now only be accessed read-only thanks to archive.org here:
+The official NoGripRacing discussion thread used to live here: http://www.nogripracing.com/forum/showthread.php?t=287425 , but nogrip.com is now sadly defunct.
+
+Thanks to the efforts of archive.org, the OP and the FAQ can still be accessed read-only here:
 
 https://web.archive.org/web/20170823021817/http://www.nogripracing.com/forum/showthread.php?t=287425
 
