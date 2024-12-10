@@ -72,7 +72,9 @@ Win7 system is located at:
 
 ## STEP 3a: -- Run Unpack Script
 
-In your S2U Installation folder, run the `UCP_s2u_unpacker.cmd` script **as administrator**.
+In your S2U Installation folder, run the `UCP_s2u_unpacker.cmd` script:
+- On win7, win8.x and win10, run the script **as administrator**.
+- On win11, just double click the script (no need to run it as administrator -- see [issue #8](https://github.com/ermo/s2u_ucp/issues/8#issuecomment-2526422530))
  
 ![UCP STEP 3a: Run `s2u_unpacker.cmd` as administrator](images/UCP_STEP_3a_s2u_unpacker.cmd_run_as_administrator.png)
 
