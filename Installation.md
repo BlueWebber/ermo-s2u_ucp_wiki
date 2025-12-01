@@ -72,17 +72,24 @@ Win7 system is located at:
 
 ## STEP 3a: -- Run Unpack Script
 
-In your S2U Installation folder, run the `UCP_s2u_unpacker.cmd` script:
-- On win7, win8.x and win10, run the script **as administrator**.
-- On win11, just double click the script (no need to run it as administrator -- see [issue #8](https://github.com/ermo/s2u_ucp/issues/8#issuecomment-2526422530))
- 
-![UCP STEP 3a: Run `s2u_unpacker.cmd` as administrator](images/UCP_STEP_3a_s2u_unpacker.cmd_run_as_administrator.png)
+<ins>In your S2U Installation folder:</ins>
 
-* To run the script as administrator, you will need to right-click it and
-  choose "Run as administrator".
+* For `Windows 10 and below`, you need to:
+  * Run the script **as administrator**, to do that: Right-click it and
+  choose "Run as administrator"
+    * ![UCP STEP 3a: Run `s2u_unpacker.cmd` as administrator](images/UCP_STEP_3a_s2u_unpacker.cmd_run_as_administrator.png)
 
-![UCP STEP 3ab: `s2u_unpacker.cmd` run as administrator hint](images/UCP_STEP_3ab_s2u_unpacker.cmd.png)
-![UCP STEP 3ac: `s2u_unpacker.cmd` finished](images/UCP_STEP_3ac_s2u_unpacker.cmd_finished.png)
+* For `Windows 11`, you need to:
+  1. Unblock the script if [Smart App Control](https://go.microsoft.com/fwlink/?linkid=2194116) is enabled ([On by default in Windows Security](https://go.microsoft.com/fwlink/?linkid=2185232)), to do that: Right-click it > Click Properties > Click the "Unblock" checkbox at the bottom of the "General" tab > Click "Ok"
+      * ![UCP STEP 3aa: `s2u_unpacker.cmd` unblock app open properties hint 1.1.](images/UCP_STEP_3aa_s2u_unpacker.cmd.png)
+      * ![UCP STEP 3aaa: `s2u_unpacker.cmd` unblock app click checkbox hint 1.2.](images/UCP_STEP_3aaa_s2u_unpacker.cmd.png)
+      * ![UCP STEP 3aaa: `s2u_unpacker.cmd` unblock app click ok hint 1.3.](images/UCP_STEP_3aab_s2u_unpacker.cmd.png)
+  2. Double click the script and run as usual **without administrator** 
+  3. For more information, see [issue #8](https://github.com/ermo/s2u_ucp/issues/8#issuecomment-2526422530); You need to Unblock it for it to run because, to pass Smart App Control, The script needs to be signed with a Microsoft Trusted Publisher certificate, which is subscription-based and inviable for most volunteer projects
+
+* Now just follow the terminal window that opens and ensure it completes successfully before moving to the next step, may take a while
+  1. ![UCP STEP 3ab: `s2u_unpacker.cmd` run as administrator hint](images/UCP_STEP_3ab_s2u_unpacker.cmd.png)
+  2. ![UCP STEP 3ac: `s2u_unpacker.cmd` finished](images/UCP_STEP_3ac_s2u_unpacker.cmd_finished.png)
 
 ## STEP 3b: -- Activate Unpacked Version
 
@@ -107,18 +114,12 @@ the unpacked game files:
 
 ## STEP 4a: -- Run UCP Install Script
 
-Now you'll need to run the `UCP_create_JSGME_install.cmd` script that you copied
-into your Shift 2 Installation folder **as administrator**:
+Now you'll need to run the `UCP_create_JSGME_install.cmd` script in your S2U Installation folder same way as shown in [Step 3a](#step-3a----run-unpack-script)
 
-![UCP STEP 4a: Run `create_JSGME_install.cmd` as administrator](images/UCP_STEP_4a_create_JSGME_install.cmd_run_as_administrator.png)
-
-* To run the script as administrator, you will need to right-click it and
-  choose "Run as administrator"
-
-![UCP STEP 4ab: Run as administrator hint for `UCP_create_JSGME_install.cmd`](images/UCP_STEP_4ab_create_JSGME_install.cmd.png)
-![UCP STEP 4ac: `UCP_create_JSGME_install.cmd` finished](images/UCP_STEP_4ac_create_JSGME_install_finished.cmd.png)
-
-* The UCP install script automatically creates a folder called
+1. ![UCP STEP 4a: Run `create_JSGME_install.cmd` hint](images/UCP_STEP_4a_create_JSGME_install.cmd_run.png)
+2. ![UCP STEP 4ab: Run as administrator hint for `UCP_create_JSGME_install.cmd`](images/UCP_STEP_4ab_create_JSGME_install.cmd.png)
+3. ![UCP STEP 4ac: `UCP_create_JSGME_install.cmd` finished](images/UCP_STEP_4ac_create_JSGME_install_finished.cmd.png)
+4. The UCP install script automatically creates a folder called
   `\MODS\UCP_v1.1_JSGME_install` (or a variation hereof)
   which contains all necessary files that will be used by the JSGME software to
   actually install the UCP changes into the `<S2U Installation>` folder. 
